@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0e2eab3-05a7-4dd8-a060-31a0f0c83354" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/CarBundle/Command/AbcCheckCarsCommand.php" afterPath="$PROJECT_DIR$/src/CarBundle/Command/AbcCheckCarsCommand.php" />
+      <change beforePath="$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +20,21 @@
       <file leaf-file-name="AbcCheckCarsCommand.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarBundle/Command/AbcCheckCarsCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="885">
+              <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="e#37#71#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,10 +65,10 @@
         <option value="$PROJECT_DIR$/src/CarBundle/Controller/CarController.php" />
         <option value="$PROJECT_DIR$/src/CarBundle/Entity/Car.php" />
         <option value="$PROJECT_DIR$/src/CarBundle/Service/DataChecker.php" />
-        <option value="$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/src/CarBundle/Resources/views/car/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/CarBundle/Command/AbcCheckCarsCommand.php" />
       </list>
     </option>
@@ -171,6 +182,28 @@
               <item name="CarBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="autotrader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autotrader" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CarBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="autotrader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autotrader" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CarBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="autotrader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autotrader" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CarBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -221,7 +254,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24705000" />
+    <option name="totallyTimeSpent" value="25310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -622,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarBundle/Entity/Car.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1091">
@@ -670,10 +695,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CarBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarBundle/Command/AbcCheckCarsCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="885">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="e#37#71#0#PHP" expanded="true" />
           </folding>

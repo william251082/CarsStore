@@ -11,8 +11,26 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-class AbcCheckCarsCommand extends ContainerAwareCommand
+class AbcCheckCarsCommand extends Command
 {
+    /** @var DataChecker */
+    protected $carChecker;
+    /** @var EntityManager */
+    protected $manager;
+
+    /**
+     * AbcCheckCarsCommand constructor.
+     * @param DataChecker $carChecker
+     * @param EntityManager $manager
+     */
+    public function __construct(DataChecker $carChecker, EntityManager $manager)
+    {
+        $this->carChecker = $carChecker;
+        $this->manager = $manager;
+        parent::__construct();
+    }
+
+
     protected function configure()
     {
         $this
@@ -25,9 +43,7 @@ class AbcCheckCarsCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $manager = $this->getContainer()->get('doctrine.orm.entity_manager');
-        $dataChecker = $this->getContainer()->get('car.data_checker');
-        $carRepository = $manager->getRepository('CarBundle:Car');
+        $carRepository = $this->manager->getRepository('CarBundle:Car');
         $cars = $carRepository->findAll();
         $bar = new ProgressBar($output, count($cars));
 
@@ -35,12 +51,11 @@ class AbcCheckCarsCommand extends ContainerAwareCommand
         $bar->setFormat($argument);
 
         $bar->start();
-        foreach($cars as $car){
-            $dataChecker->checkCar($car);
+        foreach ($cars as $car) {
+            $this->carChecker->checkCar($car);
             sleep(1);
             $bar->advance();
         }
         $bar->finish();
     }
-
 }
